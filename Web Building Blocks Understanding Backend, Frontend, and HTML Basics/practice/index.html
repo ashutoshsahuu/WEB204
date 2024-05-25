@@ -3,28 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .text {
+            font-size: 72px;
+            background: linear-gradient(90deg, #410CEF, #8300D3);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .main {
+            background-color: #090B0E;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .p {
+            background: linear-gradient(90deg, #410CEF, #8300D3);
+            width: auto;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: bold;
+            padding: 8px 4px;
+            box-shadow: #8300D3 0px 0px 18px 0px;
+        }
+
+        span {
+            background-color: #7B0FFF;
+            padding: 12px 64px;
+            border-radius: 100px;
+            color: rgba(255, 255, 255, 0.544);
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            width: 400px;
+        }
+
+        .bg {
+            background-color: #090B0E;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input::placeholder{
+            color: gray;
+        }
+    </style>
 </head>
 
 <body>
-
-    <div>
-        <div class="a">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-        </div>
-        <div class="b">
-
-        </div>
-        <div class="c">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sequi est perferendis consectetur natus odio
-            at libero id rem, debitis nostrum minima. Voluptatum sint dolorem expedita saepe molestias, delectus iste
-            accusamus, aut rem quibusdam minima architecto voluptate repellendus quos fugiat iure et, eos eius nisi unde
-            illo nobis incidunt. Illum!
+    <div class="main">
+        <h2 class="text">AI Generated Website</h2>
+        <div class="p">
+            <div class="bg">
+                <input type="text" placeholder="Al Powered Habit traking .."><span>Generate</span>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
